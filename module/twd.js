@@ -225,7 +225,7 @@ Hooks.on('hotbarDrop', (bar, data, slot) => {
 });
 
 Hooks.on("renderPause", (_app, html, options) => {
-  html.find('img[src="icons/svg/clockwork.svg"]').attr("src", "systems/twd/images/paused-alien.png");
+  html.find('img[src="icons/svg/clockwork.svg"]').attr("src", "systems/twd/images/paused-twd.png");
 });
 
 

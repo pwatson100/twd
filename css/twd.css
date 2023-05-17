@@ -246,11 +246,11 @@ a.content-link {
 }
 .dice-tooltip .dice-rolls {
   color: inherit;
-  background: hsl(0, 0%, 0%);
+  /* background: hsl(0, 0%, 0%); */
 }
 .dice-tooltip .part-header {
   color: inherit;
-  background: hsl(0, 0%, 0%);
+  /* background: hsl(0, 0%, 0%); */
 }
 
 .dice-tooltip .dice-rolls .roll {
@@ -270,13 +270,13 @@ a.content-link {
 
 .inline-roll .dice-tooltip {
   color: inherit;
-  background: hsl(0, 0%, 0%);
+  /* background: hsl(0, 0%, 0%); */
   border: 2px solid black;
   border-radius: 2px;
 }
 
 a.inline-roll {
-  background: hsl(0, 0%, 0%);
+  /* background: hsl(0, 0%, 0%); */
   padding: 1px 4px;
   border: 1px solid black;
   border-radius: 2px;

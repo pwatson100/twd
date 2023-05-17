@@ -1097,19 +1097,19 @@ export class twdActor extends Actor {
           }
 
           switch (testArray[5]) {
-            case game.i18n.localize('TWD.None') + ' ':
+            case game.i18n.localize('TWD.None'):
               healTime = 0;
               break;
-            case game.i18n.localize('TWD.OneRound') + ' ':
+            case game.i18n.localize('TWD.BDays'):
               healTime = 1;
               break;
-            case game.i18n.localize('TWD.OneTurn') + ' ':
+            case game.i18n.localize('TWD.BHours'):
               healTime = 2;
               break;
-            case game.i18n.localize('TWD.OneShift') + ' ':
+            case game.i18n.localize('TWD.AHours'):
               healTime = 3;
               break;
-            case game.i18n.localize('TWD.OneDay'):
+            case game.i18n.localize('TWD.ADays'):
               +' ';
               healTime = 3;
               break;

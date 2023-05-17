@@ -1,0 +1,122 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="vehicle-header">
+    <img class="profile-img-item" src="{{img}}" data-edit="img" title="{{name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="{{localize 'TWD.Suit'}}" /></h1>
+
+      <div class="resources grid-weapon">
+        <h3 class="resource-label wItem1">{{localize 'TWD.Weight'}}</h3>
+        <input type="text" name="system.attributes.weight.value" class="maxboxsize wItem2" value="{{system.attributes.weight.value}}" data-dtype="Number" />
+        <h3 class="resource-label wItem3">{{localize 'TWD.Cost'}}</h3>
+        <input type="text" class="cashboxsize currency wItem4" name="system.attributes.cost.value" value="{{system.attributes.cost.value}}" />
+        <h3 class="resource-label wItem5">{{localize 'TWD.ArmorRating'}}</h3>
+        <input type="text" class="wItem6 maxboxsize" name="system.attributes.armorrating.value" value="{{system.attributes.armorrating.value}}" data-dtype="text" />
+        <div class="wItem7">
+          <label class="resource-label" style="font-size: medium">{{localize 'TWD.AirSupply'}}</label>
+          <input type="text" class="maxboxsize" name="system.attributes.airsupply.value" value="{{system.attributes.airsupply.value}}" data-dtype="Number" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="attributes">{{localize 'TWD.Attributes'}}</a>
+    <a class="item" data-tab="notes">{{localize 'TWD.Notes'}}</a>
+    <a class="item" data-tab="modifiers">{{localize 'TWD.Modifiers'}}</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body" style="height: 300px">
+    {{!-- Attributes Tab --}}
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      <h2 class="resource-label">{{localize 'TWD.Comment'}}</h2>
+      <div class="tab item" style="border: solid 1px; padding: 5px">{{editor system.attributes.comment.value target="system.attributes.comment.value" button=true owner=owner editable=true}}</div>
+
+    </div>
+    <div class="tab modifiers" data-group="primary" data-tab="modifiers">
+      <h2 class="resource-label">{{localize 'TWD.Attributes'}}</h2>
+      <div class="grid-2col">
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.attributes.health.value" class="resource-label">{{localize 'TWD.Health'}}</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.attributes.health.value" value="{{system.modifiers.attributes.health.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.attributes.stress.value" class="resource-label">{{localize 'TWD.Stress'}}</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.attributes.stress.value" value="{{system.modifiers.attributes.stress.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.attributes.str.value" class="resource-label">{{localize 'TWD.AbilityStr'}}</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.attributes.str.value" value="{{system.modifiers.attributes.str.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.attributes.wit.value" class="resource-label">{{localize 'TWD.AbilityWit'}}</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.attributes.wit.value" value="{{system.modifiers.attributes.wit.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.attributes.agl.value" class="resource-label">{{localize 'TWD.AbilityAgl'}}</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.attributes.agl.value" value="{{system.modifiers.attributes.agl.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.attributes.emp.value" class="resource-label">{{localize 'TWD.AbilityEmp'}}</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.attributes.emp.value" value="{{system.modifiers.attributes.emp.value}}" data-dtype="Number" />
+        </div>
+      </div>
+
+      <h2 class="resource-label">{{localize 'TWD.Skills'}}</h2>
+      <div class="grid-2col">
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.heavyMach.value" class="resource-label">{{localize 'TWD.SkillheavyMach'}} ({{localize 'TWD.AbilityAbbstr'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.heavyMach.value" value="{{system.modifiers.skills.heavyMach.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.closeCbt.value" class="resource-label">{{localize 'TWD.SkillcloseCbt'}} ({{localize 'TWD.AbilityAbbstr'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.closeCbt.value" value="{{system.modifiers.skills.closeCbt.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.stamina.value" class="resource-label">{{localize 'TWD.Skillstamina'}} ({{localize 'TWD.AbilityAbbstr'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.stamina.value" value="{{system.modifiers.skills.stamina.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.rangedCbt.value" class="resource-label">{{localize 'TWD.SkillrangedCbt'}} ({{localize 'TWD.AbilityAbbagl'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.rangedCbt.value" value="{{system.modifiers.skills.rangedCbt.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.mobility.value" class="resource-label">{{localize 'TWD.Skillmobility'}} ({{localize 'TWD.AbilityAbbagl'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.mobility.value" value="{{system.modifiers.skills.mobility.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.piloting.value" class="resource-label">{{localize 'TWD.Skillpiloting'}} ({{localize 'TWD.AbilityAbbagl'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.piloting.value" value="{{system.modifiers.skills.piloting.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.command.value" class="resource-label">{{localize 'TWD.Skillcommand'}} ({{localize 'TWD.AbilityAbbemp'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.command.value" value="{{system.modifiers.skills.command.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.manipulation.value" class="resource-label">{{localize 'TWD.Skillmanipulation'}} ({{localize 'TWD.AbilityAbbemp'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.manipulation.value" value="{{system.modifiers.skills.manipulation.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.medicalAid.value" class="resource-label">{{localize 'TWD.SkillmedicalAid'}} ({{localize 'TWD.AbilityAbbemp'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.medicalAid.value" value="{{system.modifiers.skills.medicalAid.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.observation.value" class="resource-label">{{localize 'TWD.Skillobservation'}} ({{localize 'TWD.AbilityAbbwit'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.observation.value" value="{{system.modifiers.skills.observation.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.survival.value" class="resource-label">{{localize 'TWD.Skillsurvival'}} ({{localize 'TWD.AbilityAbbwit'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.survival.value" value="{{system.modifiers.skills.survival.value}}" data-dtype="Number" />
+        </div>
+        <div class="modifiers flexrow flex-group-center">
+          <label for="system.modifiers.skills.comtech.value" class="resource-label">{{localize 'TWD.Skillcomtech'}} ({{localize 'TWD.AbilityAbbwit'}})</label>
+          <input type="text" class="maxboxsize" name="system.modifiers.skills.comtech.value" value="{{system.modifiers.skills.comtech.value}}" data-dtype="Number" />
+        </div>
+      </div>
+    </div>
+
+    {{!-- Notes Tab --}}
+    <div class="tab item active" data-group="primary" data-tab="notes">{{editor system.notes.notes target="system.notes.notes" button=true owner=owner editable=true}}</div>
+  </section>
+</form>

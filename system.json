@@ -1,0 +1,39 @@
+{
+  "id": "twd",
+  "title": "The Walking Dead - Alien Reskin",
+  "description": "Reskin of the Alien system to test out The Walking Dead RPG",
+  "authors": [{ "name": "Paul Watson" }],
+  "url": "https://github.com/pwatson100/twd",
+  "flags": {},
+  "relationships": {
+    "systems": [{ "id": "twd" }]
+  },
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10",
+  "scripts": [],
+  "esmodules": ["module/twd.js"],
+  "styles": ["css/twd.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "socket": true,
+  "manifest": "",
+  "download": "",
+  "protected": false,
+  "initiative": "1d10",
+  "gridDistance": 5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "stress"
+}

@@ -1,0 +1,609 @@
+.twd ul ol {
+  margin-left: 3px;
+}
+.twd #context-menu {
+  // width: 100%;
+  width: auto;
+  height: max-content;
+  min-width: 150px;
+  max-width: 360px;
+  position: absolute;
+  left: -900%;
+  top: -102%;
+  background: url(../images/foreground.jpg);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  text-align: left;
+  font-size: smaller;
+  z-index: 1;
+}
+.twd #context-menu li.context-item {
+  line-height: 16px;
+}
+
+.twd .window-content {
+  // font-family: var(--alienfont);
+  // color: black;
+  // font-size: var(--fontsize);
+  /* background: hsl(0, 0%, 0%); */
+  // flex-direction: column;
+  // flex-wrap: nowrap;
+  // padding: 2px;
+  // overflow-y: scroll;
+  // overflow-x: auto;
+  // border: black 3px;
+}
+
+// .twd .window-content {
+//   // font-family: var(--alienfont);
+//   // color: black;
+//   // font-size: var(--fontsize);
+//   background: $c-black;
+//   // flex-direction: column;
+//   // flex-wrap: nowrap;
+//   // padding: 2px;
+//   // overflow-y: scroll;
+//   // overflow-x: auto;
+//   // border: black 3px;
+// }
+
+.twd form {
+  font-family: var(--alienfont);
+  /* color: black; */
+  font-size: var(--fontsize);
+  background: url(../images/foreground.jpg);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  border: var(--color-border-dark) 3px;
+}
+
+.journal-sheet {
+  form {
+    // font-family: var(--alienfont);
+    // color: black;
+    // background: url(../images/mother-instructions/indbackground2.png) no-repeat top left;
+    background: var(--journalback) top left !important;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 1px;
+    // color: hsl(187, 52%, 80%);
+    color: var(--alientextjournal) !important;
+  }
+  select {
+    font-family: var(--alienfont);
+    //  color: $c-green;
+    color: inherit;
+    background: $c-black;
+    border: black 3px;
+    border: 1px solid hsl(53, 4%, 46%);
+    border-radius: 3px;
+    padding: 0 3px;
+    text-overflow: ellipsis;
+    font-size: 16px;
+  }
+  input {
+    font-family: var(--alienfont);
+    //  color: $c-green;
+    color: inherit;
+
+    background: $c-black;
+    border: black 3px;
+  }
+  button {
+    font-family: var(--alienfont);
+    //  color: $c-green;
+    color: inherit;
+
+    background: $c-black;
+    border: black solid 1px;
+    width: 100%;
+    margin: 0 1px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .tox .tox-editor-container {
+    background-color: $c-white;
+  }
+}
+
+a.entity-link {
+  color: $c-white;
+  background: $c-black;
+}
+
+.twd a.entity-link {
+  color: $c-white;
+  background: $c-black;
+}
+a.content-link {
+  color: $c-white;
+  background: $c-black;
+}
+
+.twd a.content-link {
+  color: $c-white;
+  background: $c-black;
+}
+#chat .message {
+  border: 1px solid hsl(0, 8%, 34%);
+  border-radius: 1px;
+}
+.chat-message {
+  // background-image: url('/systems/twd/images/IndBackground3.png');
+  background-image: var(--chatbackground);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: inherit;
+  //  color: $c-green;
+
+  .message-header .message-sender {
+    color: black;
+    // color: inherit;
+  }
+  .message-metadata {
+    color: black;
+    // color: inherit;
+  }
+  .flavor-text {
+    color: black;
+    // color: inherit;
+  }
+  .table-draw .table-results .table-result {
+    color: black;
+    // color: inherit;
+  }
+}
+.chat-message .table-draw .table-results .table-result .chatBG {
+  // background-image: url('/systems/twd/images/IndBackground3.png');
+  background-image: var(--chatbackground);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+
+  padding-left: 6px;
+}
+.chat-message.whisper {
+  background: hsl(0, 0%, 9%);
+  //  color: $c-green;
+  color: black;
+}
+
+.chat-message.blind {
+  background: hsl(0, 0%, 9%);
+}
+
+.chat-message.emote {
+  background: hsl(0, 0%, 9%);
+}
+
+.chat-message .critchat {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border-light-primary);
+  padding: 3px 0;
+  color: black;
+}
+
+.dice-tooltip .roll > img {
+  width: 24px;
+}
+
+.dice-tooltip {
+  border: 1px solid black;
+  border-radius: 1px;
+  background: $c-black;
+
+  .dice-rolls {
+    color: inherit;
+    background: $c-black;
+  }
+
+  .part-header {
+    color: inherit;
+    //  color: $c-green;
+    background: $c-black;
+  }
+}
+.dice-tooltip .dice-rolls .roll {
+  filter: none;
+}
+.dice-tooltip .dice-rolls .roll.max {
+  filter: none;
+}
+.dice-tooltip .dice-rolls .roll.min {
+  filter: none;
+}
+
+.inline-roll .dice-tooltip {
+  color: inherit;
+  //  color: $c-green;
+  background: $c-black;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+// a.entity-link,
+a.inline-roll {
+  background: $c-black;
+  padding: 1px 4px;
+  border: 1px solid black;
+  border-radius: 2px;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.dice-roll .dice-formula,
+.dice-roll .dice-total {
+  // color: inherit;
+  color: black;
+}
+.dice-tooltip .part-header .part-formula {
+  //  color: $c-green;
+  color: inherit;
+}
+.part-total {
+  //  color: $c-green;
+  color: inherit;
+}
+
+.twd h2 {
+  border: 0;
+  padding: 0;
+  margin: 1px;
+  margin-left: 5px;
+  // font-size: var(--fontsize) ;
+}
+.twd h3 {
+  border: 0;
+  padding: 0;
+  margin: 1px;
+  // font-size: var(--fontsize) ;
+
+  // margin-left: 2px;
+}
+
+.twd h4 {
+  border: 0;
+  padding: 0;
+  margin: 1px;
+  // font-size: var(--fontsize) ;
+}
+.resource-content {
+  button {
+    flex: 0;
+    border: 0;
+    width: 30px;
+    font-size: 1.5rem;
+    padding: 0;
+    color: inherit;
+    margin: 0;
+  }
+}
+
+.rollable {
+  &:hover,
+  &:focus {
+    // color: black;
+    text-shadow: 0 0 20px hsl(0, 100%, 50%);
+    font-size: 95%;
+    cursor: pointer;
+  }
+}
+.rollableVeh {
+  &:hover,
+  &:focus {
+    text-shadow: 0 0 20px hsl(0, 100%, 50%);
+    font-size: 1.3em;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
+.creature-acid-roll {
+  &:hover,
+  &:focus {
+    // color: black;
+    text-shadow: 0 0 20px hsl(0, 100%, 50%);
+    font-size: 95%;
+    cursor: pointer;
+  }
+}
+.rollItem {
+  &:hover,
+  &:focus {
+    // color: black;
+    text-shadow: 0 0 20px hsl(0, 100%, 50%);
+    font-size: 110%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
+.openItem {
+  &:hover,
+  &:focus {
+    // color: black;
+    text-shadow: 0 0 20px hsl(0, 100%, 50%);
+    font-size: 110%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
+.talent-btn {
+  &:hover,
+  &:focus {
+    color: hsl(103, 100%, 28%);
+    text-shadow: 0 0 20px hsl(0, 100%, 50%);
+    // font-size: 110%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
+
+.minus-btn .plus-btn {
+  width: 10px;
+  height: 10px;
+  line-height: 20px;
+  padding: 0;
+}
+
+.supply-btn {
+  font-size: 5px;
+  padding: 0;
+  font-family: var(--alienfont);
+}
+
+.pwr-btn {
+  &:hover,
+  &:focus {
+    background-color: hsl(4, 69%, 53%);
+    font-size: 120%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
+
+.stunt-btn {
+  width: 5px;
+  padding: 0;
+  font-family: var(--alienfont);
+}
+
+.creature-attack-roll {
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  // font-size: 25pt;
+  font-weight: bold;
+  font-size: 2em;
+  /* font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem); */
+  text-shadow: 2px 2px hsl(128, 83%, 25%);
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  font-family: var(--alienfont);
+  line-height: inherit;
+}
+.creature-attack-roll:hover {
+  border-radius: 10px;
+  color: hsl(0, 100%, 50%);
+  text-shadow: 2px 2px hsl(0, 92%, 26%);
+}
+.creature-attack-roll:active {
+  position: relative;
+  top: 1px;
+  border-radius: unset;
+  background-color: unset;
+  color: unset;
+}
+button:hover,
+button:focus {
+  box-shadow: unset;
+}
+
+.alien-Push-button {
+  display: inline-block;
+  width: 260px;
+  height: 45px;
+  background-color: $c-black;
+  // color: hsl(84, 100%, 59%);
+  font-weight: bold;
+  font-size: clamp(2rem, -4.5rem + 5vw, 3rem);
+  font-family: var(--alienfont);
+  padding-bottom: 5px;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  font-family: var(--alienfont);
+  line-height: inherit;
+}
+.alien-Push-button:hover {
+  border-radius: 10px;
+  color: hsl(0, 100%, 50%);
+}
+
+.alien-crit-button {
+  display: inline-block;
+  width: 280px;
+  height: 26px;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  // font-size: clamp(1rem, 1vw, 2rem);
+
+  font-family: var(--alienfont);
+  line-height: inherit;
+}
+.alien-crit-button:hover {
+  border-radius: 5px;
+  color: hsl(0, 100%, 50%);
+}
+
+.alien-diceface-b0 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 1px;
+  background: url(../ui/alien-dice-b0.png) no-repeat top left;
+}
+.alien-diceface-b6 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 1px;
+  background: url(../ui/alien-dice-b6.png) no-repeat top left;
+}
+.alien-diceface-y0 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 1px;
+  background: url(../ui/alien-dice-y0.png) no-repeat top left;
+}
+.alien-diceface-y1 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 1px;
+  background: url(../ui/alien-dice-y1.png) no-repeat top left;
+}
+.alien-diceface-y6 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 1px;
+  background: url(../ui/alien-dice-y6.png) no-repeat top left;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: hsl(0deg 0% 100%);
+  //  color: $c-green;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+  margin-left: -60px;
+  border-style: solid;
+  border-color: black;
+}
+.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.twd .inputtext {
+  color: inherit;
+  background-color: $c-black;
+}
+
+// .consume-box {
+//   border: 1px solid black;
+// }
+
+.ctooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted $c-black;
+}
+
+/* Tooltip text */
+.ctooltip .ctooltiptext {
+  // /* Position the tooltip text - see examples below! */
+  // position: absolute;
+  // z-index: 1;
+  font-size: small;
+  visibility: hidden;
+  width: 150px;
+  background-color: $c-black;
+  color: black;
+  text-align: center;
+  border-radius: 3px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  // top: -5px;
+  // right: 105%;
+  margin-left: -150px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.ctooltip:hover .ctooltiptext {
+  visibility: visible;
+}
+
+.ctooltip .ctooltiptext::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+// .dice-tooltip .dice-rolls .roll.d6 {
+//   background-image: url(../icons/svg/d6-grey.svg);
+// }
+
+.alienchatwhite {
+  color: var(--alienchatwhite);
+}
+
+.alienchatred {
+  color: var(--alienchatred);
+  font-weight: bolder;
+  font-size: larger;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: var(--alienchatredshadow);
+}
+
+.alienchatblue {
+  color: var(--alienchatblue);
+}
+.alienchatlightblue {
+  color: blue;
+  font-weight: bold;
+  font-size: larger;
+}
+.alienchatlightgreen {
+  color: black;
+}
+.alienchatgoldenrod {
+  color: var(--alienchatgoldenrod);
+  font-weight: bold;
+}

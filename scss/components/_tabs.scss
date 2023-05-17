@@ -1,0 +1,27 @@
+.tabs {
+  height: 30px;
+  // border-top: 1px solid #aaa;
+  // border-bottom: 1px solid #aaa;
+  color: inherit;
+  /* background-color: hsl(0, 0%, 0%); */
+  border: 1px solid black;
+
+  .sheet nav.sheet-tabs {
+    height: 32px;
+    flex: 0 0 32px;
+    margin: 4px 0;
+    line-height: 32px;
+    border-top: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+  }
+  .item {
+    // line-height: 30px;
+    font-weight: bold;
+    color: inherit;
+  }
+
+  .item.active {
+    text-decoration: underline;
+    text-shadow: none;
+  }
+}

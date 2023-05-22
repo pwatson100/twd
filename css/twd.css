@@ -122,12 +122,12 @@
   background-size: cover;
   border: 1px solid black;
   border-radius: 1px;
-  color: var(--alientextjournal) !important;
+  /* color: var(--alientextjournal) !important; */
 }
 .journal-sheet select {
   font-family: var(--alienfont);
-  color: inherit;
-  background: hsl(0, 0%, 0%);
+  /* color: inherit; */
+  /* background: hsl(0, 0%, 0%); */
   border: black 3px;
   border: 1px solid hsl(53, 4%, 46%);
   border-radius: 3px;
@@ -137,7 +137,7 @@
 }
 .journal-sheet input {
   font-family: var(--alienfont);
-  color: inherit;
+  /* color: inherit; */
   background: hsl(0, 0%, 0%);
   border: black 3px;
 }
@@ -2761,7 +2761,7 @@ combobox:focus {
   border-radius: 1px;
   background: var(--journalback) top left !important;
   background-size: cover;
-  color: powderblue;
+  /* color: powderblue; */
 }
 
 .sheet.journal-entry .sidebar .directory-header .header-search input {

@@ -71,13 +71,13 @@
     border: 1px solid black;
     border-radius: 1px;
     // color: hsl(187, 52%, 80%);
-    color: var(--alientextjournal) !important;
+    /* color: var(--alientextjournal) !important; */
   }
   select {
     font-family: var(--alienfont);
     //  color: $c-green;
-    color: inherit;
-    background: $c-black;
+    /* color: inherit; */
+    /* background: hsl(0, 0%, 0%); */
     border: black 3px;
     border: 1px solid hsl(53, 4%, 46%);
     border-radius: 3px;
@@ -88,7 +88,7 @@
   input {
     font-family: var(--alienfont);
     //  color: $c-green;
-    color: inherit;
+    /* color: inherit; */
 
     background: $c-black;
     border: black 3px;
